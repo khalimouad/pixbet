@@ -18,3 +18,8 @@ Target Vercel project: pixbet (`prj_8ZzWHdAjlNzFGDiaHzxP3xcBPzVE`), team `team_M
 ## Sports odds
 
 Set ODDS_API_KEY as a server-only Vercel production Secret. Never use NEXT_PUBLIC_ for this key. GET /api/odds retrieves upcoming events via The Odds API, EU region, decimal h2h market. Next.js persistent Data Cache shares a 6-hour snapshot; CDN caching also reduces requests. There is no browser polling, forced refresh, or public upstream parameter forwarding. Expect roughly 120 provider requests per 30 days with continuous traffic in a stable deployment; cache misses, regional execution, failures and redeployments can add requests. This is not a hard quota cap. Failed provider results are cached too, to prevent repeated quota spending. Error details and credential-bearing URLs are never returned. Sports odds are informational and may be stale; tickets remain simulations. Provider docs: https://the-odds-api.com/liveapi/guides/v4/
+
+
+## Independent game backend
+
+See docs/backend-design.md. Demo launches use signed short-lived game sessions; rounds use server-side cryptographic randomness. Set DEMO_SESSION_SECRET as a production Secret with at least 32 random characters. No third-party game files have been imported. Real provider launches and financial wallets require provider access, accounts and durable storage and are not implemented by the demo endpoints.
