@@ -13,3 +13,8 @@ All artwork is original SVG. Games are illustrative simulations, not provider in
 ## Deployment
 
 Target Vercel project: pixbet (`prj_8ZzWHdAjlNzFGDiaHzxP3xcBPzVE`), team `team_Mo63QVR9kLRk18gJf3cmMqFU`. Framework: Next.js.
+
+
+## Sports odds
+
+Set ODDS_API_KEY as a server-only Vercel production Secret. Never use NEXT_PUBLIC_ for this key. GET /api/odds retrieves upcoming events via The Odds API, EU region, decimal h2h market. Next.js persistent Data Cache shares a 6-hour snapshot; CDN caching also reduces requests. There is no browser polling, forced refresh, or public upstream parameter forwarding. Expect roughly 120 provider requests per 30 days with continuous traffic in a stable deployment; cache misses, regional execution, failures and redeployments can add requests. This is not a hard quota cap. Failed provider results are cached too, to prevent repeated quota spending. Error details and credential-bearing URLs are never returned. Sports odds are informational and may be stale; tickets remain simulations. Provider docs: https://the-odds-api.com/liveapi/guides/v4/
