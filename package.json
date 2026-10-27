@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "test:bigbang": "node --test tests/bigbang.test.mjs",
+    "verify:bigbang": "node scripts/smoke-bigbang.mjs"
   },
   "dependencies": {
     "next": "^16.0.0",

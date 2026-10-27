@@ -23,3 +23,8 @@ Set ODDS_API_KEY as a server-only Vercel production Secret. Never use NEXT_PUBLI
 ## Independent game backend
 
 See docs/backend-design.md. Demo launches use signed short-lived game sessions; rounds use server-side cryptographic randomness. Set DEMO_SESSION_SECRET as a production Secret with at least 32 random characters. No third-party game files have been imported. Real provider launches and financial wallets require provider access, accounts and durable storage and are not implemented by the demo endpoints.
+
+
+## BigBang provider
+
+See docs/bigbang.md for the sandbox catalogue and embedded demo launch integration. Add BIGBANG_API_KEY as a server-only production Secret; this adapter accepts test keys only. It always requests demo mode and does not connect real wallets or balance callbacks.
