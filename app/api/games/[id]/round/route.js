@@ -10,3 +10,4 @@ export async function POST(request,{params}) {
  if(!verifyDemoSession(token,id,process.env.DEMO_SESSION_SECRET))return Response.json({error:'invalid_or_expired_session'},{status:401,headers});
  return Response.json(createDemoRound(),{headers});
 }
+

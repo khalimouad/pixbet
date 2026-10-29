@@ -12,3 +12,4 @@ export async function POST(request,{params}) {
   return Response.json({...session,game:{id:game.id,name:game.name},mode:'demo',realMoneyEnabled:false},{headers});
  }catch{return Response.json({error:'sessions_unavailable'},{status:503,headers})}
 }
+

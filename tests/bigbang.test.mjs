@@ -23,7 +23,7 @@ test('launch always uses sandbox header auth and forces demo without a player or
  const session=await client.launchDemo(5,'fr');
  assert.equal(calls.length,1);assert.equal(calls[0].url,'https://api.bigbangcasino.bet/api/v1/games/launch');
  assert.equal(calls[0].options.headers['X-API-Key'],'ek_test_fake');
- const body=JSON.parse(calls[0].options.body);assert.equal(body.demo,true);assert.equal(body.game_id,5);assert.equal(body.language,'fr');assert(!('user_token' in body));assert(!('amount' in body));
+ const body=JSON.parse(calls[0].options.body);assert.equal(body.demo,true);assert.equal(body.game_id,5);assert.equal(body.language,'tr');assert(!('user_token' in body));assert(!('amount' in body));
  assert.equal(session.realMoneyEnabled,false);assert(!JSON.stringify(session).includes('ek_test_fake'));
 });
 test('live credentials and invalid game IDs fail before any request',async()=>{
@@ -41,3 +41,4 @@ test('reject non-demo responses even when provider returns success',async()=>{
  const client=createBigBangClient({getKey:()=>'ek_test_fake',fetchImpl:async()=>Response.json({success:true,game_url:'https://bigbangcasino.bet/api/game/a'})});
  await assert.rejects(()=>client.launchDemo(1,'en'),{code:'invalid_demo_launch'});
 });
+

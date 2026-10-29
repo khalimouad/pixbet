@@ -28,3 +28,4 @@ See docs/backend-design.md. Demo launches use signed short-lived game sessions; 
 ## BigBang provider
 
 See docs/bigbang.md for the sandbox catalogue and embedded demo launch integration. Add BIGBANG_API_KEY as a server-only production Secret; this adapter accepts test keys only. It always requests demo mode and does not connect real wallets or balance callbacks.
+

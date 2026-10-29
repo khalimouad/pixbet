@@ -19,3 +19,4 @@ export async function GET() {
  const result = await readOdds();
  return Response.json(result,{status:result.error?503:200,headers:{'Cache-Control':result.error?'public, s-maxage=300':'public, s-maxage=21600, stale-while-revalidate=60'}});
 }
+

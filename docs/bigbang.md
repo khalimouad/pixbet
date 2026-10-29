@@ -11,3 +11,4 @@ POST /api/providers/bigbang/launch validates the same-origin request and game me
 This integration does not create players, deposit or withdraw, register callbacks, or handle wallet movements. The provider demo contract uses virtual balance with no operator wallet. Future wallet work requires durable transaction storage, authenticated player accounts and the documented signature/idempotency contract; it must not reuse the demo session backend as a ledger.
 
 If the catalogue cannot be fetched, the existing original Pixbet demo games remain available and the lobby reports provider unavailability. A missing key, invalid key, insufficient permission or IP/domain restriction is shown as a connection problem, never replaced with fake provider games.
+

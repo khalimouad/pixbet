@@ -1,3 +1,4 @@
 import './globals.css';
-export const metadata = { title: 'Pixbet — Casino & Sport', description: 'Découvrez le lobby Pixbet : jeux, sports et divertissement. Démonstration sans argent réel.' };
-export default function Layout({children}) { return <html lang="fr" suppressHydrationWarning><body>{children}</body></html>; }
+export const metadata={title:'Pixbet — Casino ve Spor',description:'Binlerce casino oyununu ve spor oranlarını Pixbet’te keşfedin. Gerçek para kullanılmayan demo deneyimi.',metadataBase:new URL('https://pixbet-three.vercel.app')};
+export default function Layout({children}){return <html lang="tr" suppressHydrationWarning><body>{children}</body></html>}
+

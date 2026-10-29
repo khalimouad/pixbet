@@ -31,3 +31,4 @@ References:
 - https://github.com/Casino-Scripts-com/ViperPro-Casino/blob/main/app/Http/Controllers/Api/Games/GameController.php
 - https://github.com/Casino-Scripts-com/ViperPro-Casino/tree/main/public/originals
 - https://github.com/Casino-Scripts-com/ViperPro-Casino/blob/main/README.md
+
