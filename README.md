@@ -4,7 +4,7 @@ Next.js and JavaScript casino lobby prototype based on the supplied mobile layou
 
 ## Run
 
-Use Node.js 20.9 or later. Run `npm install`, `npm run dev`, then open http://localhost:3000/fr/casino. Production build: `npm run build`.
+Use Node.js 20.9 or later. Run `npm install`, `npm run dev`, then open http://localhost:3000/tr/casino. Production build: `npm run build`.
 
 ## Demo scope
 

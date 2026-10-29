@@ -6,5 +6,3 @@ Pixbet arayüzünün varsayılan dili Türkçedir. Ana adres /tr/casino; eski Fr
 
 Sanal kupondaki ₺ işareti yalnızca demo arayüzünün gösterim birimidir. BigBang oyun içi para birimini veya banka işlemlerini değiştirmez.
 
-
-Slider görsellerinde Pixbet için özgün olarak üretilen yetişkin 3D ve anime esintili karakterler kullanılır.
