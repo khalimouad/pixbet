@@ -29,3 +29,9 @@ See docs/backend-design.md. Demo launches use signed short-lived game sessions; 
 
 See docs/bigbang.md for the sandbox catalogue and embedded demo launch integration. Add BIGBANG_API_KEY as a server-only production Secret; this adapter accepts test keys only. It always requests demo mode and does not connect real wallets or balance callbacks.
 
+
+## Member features
+
+The Turkish member area is at /tr/account; registration and login are at /tr/auth. Games open at /tr/game/:id and require server-verified authentication. Members can edit their display name, save favorite games, view launch history and manage a virtual TRY wallet. Virtual wallet top-ups and withdrawals are simulations, independent of BigBang demo balances.
+
+Dependencies are locked in package-lock.json. Use npm ci, then npm run build. Supabase settings and schema setup are documented in docs/accounts.md.
